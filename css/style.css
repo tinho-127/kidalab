@@ -1,0 +1,45 @@
+:root {
+    --page_background: #f6f5f8;
+    --header_background: #f25e30;
+    --header_height: 70px; 
+    --header_option_char:#f7f0e5;
+}
+
+body {
+    background-color: var(--page_background);
+}
+
+header{
+    background-color: var(--header_background);
+    height: var(--header_height);
+}
+
+.header_logo{
+    float: left;
+    width: 30%;
+}
+
+.header_logo img {
+    height: var(--header_height);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_options ul{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header_options ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    width: auto;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+    line-height: var(--header_height);
+    color: var(--header_option_char);
+    font-size: 25px;
+    font-weight: bold;
+}
