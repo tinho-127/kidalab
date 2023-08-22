@@ -3,7 +3,7 @@
     --header_background: #f25e30;
     --header_height: 70px; 
     --header_option_char:#f7f0e5;
-    --footer_height: 200px; 
+    --footer_height: 150px; 
 
 }
 
@@ -68,6 +68,10 @@ footer div div ul{
     flex-direction: column; 
 }
 
+#footer_1 span{
+    text-align: center;
+}
+
 .footer_2{
     text-align: center;
     display: flex;
@@ -95,9 +99,91 @@ footer div div ul{
     padding-right: 1em;
 }
 
-.footer_2_1{
-    background-color: red;
+.form_footer{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--header_option_char);
+    margin: .3em;
+    padding: .2em;
+    border-radius: 1em;
+    border: 2px solid black;
 }
 
+.form_footer div{
+    padding: .3em;
+}
+
+.container_footer_email_1{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.container_footer_email_1 input{
+    width: 95%;
+    text-align: center;
+    background-color: white;
+    border-radius: 2em;
+    border-bottom: dotted ;
+    border-color: transparent transparent black transparent;
+}
+
+.container_footer_email_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcbb91;
+}
+
+.container_footer_email_2 input{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+/*MAIN*/
+.mainbody{
+    background-color: var(--header_background);
+    padding-bottom: 1px;
+}
+
+.mainbody img{
+    object-fit: cover;
+    object-position: bottom;
+    height: 100%;
+    width: 100%;
+}
+
+.mainbody div{
+    position: absolute;
+    width: 40%;
+    bottom: 10em;
+    margin-bottom: 0;
+    text-align: center;
+    justify-content: center; 
+
+}
+
+.mainbody div h2{
+    font-weight: 900;
+    border-radius: 1em;
+    border: 2px solid black;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--header_option_char);
+    color: var(--header_background);
+}
+
+.mainbody div h5{
+    font-size: 1.1em;
+    margin: .5em auto .5em auto;
+}
+
+.mainbody_span {
+    border-top: dashed;
+    width: 50%;
+}
 
 
