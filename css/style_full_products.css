@@ -116,15 +116,70 @@ section div span{
     margin-bottom: .5em;
 }
 
-.soldout{
-    background-color: red;
-    width:50%;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 900;
-    border-radius: 2em;
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 
+.price_left{
+    width: 40%;
+}
+
+.price_left h6{
+    text-align: right;
+}
+
+.price_right{
+    width: 40%;
+}
+
+.price_right h6{
+    text-align: left;
+}
+
+.price_bottom{
+    width: 100% ;
+}
+
+.price_sale .price_left{
+    text-decoration: line-through var(--header_background);
+}
+
+.price_sale .price_right{
+    color: var(--header_background);
+}
+
+.price_sale .price_bottom{
+    display:none;
+}
+
+.price_normal .price_left{
+    display: none;
+}
+
+.price_normal .price_right h6{
+    font-weight: 900;
+    text-align: center;
+}
+
+.price_normal .price_bottom{
+    display:none;
+}
+
+.price_soldout .price_left{
+    display: none;
+}
+
+.price_soldout .price_right{
+    display:none;
+}
+
+.price_soldout .price_bottom{
+    background-color: var(--header_background);
+    border-radius: 2em;
+}
     /*this block is for non display*/
 .section_non_display{
     background-color: var(--page_background);
