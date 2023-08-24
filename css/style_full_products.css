@@ -81,14 +81,24 @@ main{
 main section{
     width: 24%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 5px;
     background-color: white;
     border: solid;
     border-radius: 2em;
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
     border-color: transparent;
     transition: var(--transition_time);
 }
+
+main section h4{
+    color: transparent;
+    width: 100%;
+    text-align: center;
+}
+
 
 main section:hover{
     border-color: var(--header_background);
@@ -143,6 +153,22 @@ section div span{
     width: 100% ;
 }
 
+.price_sale{
+    border: dashed var(--header_background);
+}
+
+.price_sale:hover{
+    border: solid var(--header_background);
+}
+
+.price_sale h4{
+    display: block;
+    color: black;
+    font-weight: 900;
+    background-color: var(--header_background);
+    height: 1.5em;
+}
+
 .price_sale .price_left{
     text-decoration: line-through var(--header_background);
 }
@@ -193,3 +219,116 @@ section div span{
     display: none;
 }
     /*_______________________*/
+
+
+/*FOOTER*/
+footer{
+    background-color: var(--header_background);
+    height: var(--footer_height);
+}
+
+footer div div ul{
+    list-style-type: none;
+}
+
+
+#footer_1{
+    display: flex;
+    flex-direction: column; 
+}
+
+#footer_1 span{
+    text-align: center;
+}
+
+.footer_2{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    height: var(--footer_height);
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_2 div{
+    width: 50%;
+}
+
+.footer_2 div ul{
+    padding: 0;
+    
+}
+
+.footer_2 div ul a{
+    text-decoration: none;
+    color:black;    
+    transition: var(--transition_time);
+}
+
+.footer_2 div ul a:hover{
+    font-weight: 900;
+    border-bottom: solid;
+}
+
+.footer_icon_contact{
+    margin: auto;
+}
+
+.footer_icon_contact ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_icon_contact ul li{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.form_footer{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--header_option_char);
+    margin: .3em;
+    padding: .2em;
+    border-radius: 1em;
+    border: 2px solid black;
+}
+
+.form_footer div{
+    padding: .3em;
+}
+
+.container_footer_email_1{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.container_footer_email_1 input{
+    width: 95%;
+    text-align: center;
+    background-color: white;
+    border-radius: 2em;
+    border-bottom: dotted ;
+    border-color: transparent transparent black transparent;
+}
+
+.container_footer_email_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcbb91;
+    transition: var(--transition_time);
+}
+
+.container_footer_email_2:hover{
+    background-color: var(--header_background);
+    color: black;
+}
+
+.container_footer_email_2 input{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
