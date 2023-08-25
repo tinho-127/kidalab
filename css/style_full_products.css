@@ -1,5 +1,5 @@
 :root {
-    --page_background: #f7f0e5;
+    --page_background: white;
     --header_background: #f25e30;
     --header_height: 70px; 
     --header_option_char:#f7f0e5;
@@ -78,6 +78,11 @@ main{
     margin: 1em;
 }
 
+main a{
+    text-decoration: none;
+    color: black;
+}
+
 main section{
     width: 20%;
     display: flex;
@@ -85,11 +90,11 @@ main section{
     justify-content: center;
     margin: 5px;
     background-color: white;
-    border: solid;
+    border: dotted;
     border-radius: 2em;
     border-top-left-radius: 0em;
     border-top-right-radius: 0em;
-    border-color: transparent;
+    border-color: lightgray;
     transition: var(--transition_time);
 }
 
@@ -154,7 +159,7 @@ section div span{
 }
 
 .price_sale{
-    border: dashed var(--header_background);
+    border: dashed whitex;
 }
 
 .price_sale:hover{
@@ -209,6 +214,7 @@ section div span{
     /*this block is for non display*/
 .section_non_display{
     background-color: var(--page_background);
+    border-color: transparent;
 }
 
 .section_non_display:hover{
