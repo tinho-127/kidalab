@@ -13,7 +13,7 @@
  }
 
 body {
-    background-color: var(--page_background);
+    background-color: var(--header_option_char);
 }
 
 /*HEADER*/
@@ -90,11 +90,10 @@ main section{
     justify-content: center;
     margin: 5px;
     background-color: white;
-    border: dotted;
+    border: solid transparent ;
     border-radius: 2em;
     border-top-left-radius: 0em;
     border-top-right-radius: 0em;
-    border-color: lightgray;
     transition: var(--transition_time);
 }
 
@@ -159,7 +158,7 @@ section div span{
 }
 
 .price_sale{
-    border: dashed whitex;
+    border: dashed white;
 }
 
 .price_sale:hover{
