@@ -199,6 +199,7 @@ main{
     width: 45%;
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .section_img_big{
@@ -206,8 +207,13 @@ main{
     justify-content: center;
     height: var(--height_big_img);
     width: 100%;
-    margin: 4em 0 1em 0;
+    margin: 10em 0 5em 0;
 }
+
+/*this is for JS*/
+#container img.zoomed {
+    transform: scale(2);
+  }
 
 .section_img_small{
     width: 100%;
@@ -219,6 +225,7 @@ main{
     display: flex;
     height: var(--height_small_img);
     margin: 1em;
+    border: dotted lightsalmon;
 }
 
 .section_info{
@@ -260,6 +267,11 @@ main{
     flex-direction: row;
     border: solid;
     margin-right:auto;
+}
+
+.section_detail_box_left button {
+    background-color: var(--header_background);
+    border-color: transparent;
 }
 
 .section_detail_box_right,
@@ -339,3 +351,4 @@ main{
 .section_info i{
     color: var(--icon_color)
 }
+

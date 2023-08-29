@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/style_each_product.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
+
   </head>
   <body>
     <header class="header">
@@ -29,13 +30,14 @@
 
     <main>
         <section class="section_img">
-            <div class="section_img_big">
-                <img src="../img/kendamil-organic-stage-1-800g-baby-formula-622915_500x9b3c.jpg">
+            <div class="section_img_big" id="container">
+                <img src="../img/kendamil-organic-stage-1-800g-baby-formula-622915_500x9b3c.jpg" id="main_img">
             </div>
             <div class="section_img_small">
-                <div><img src="../img/kendamil-organic-stage-1-1.jpg"></div>
-                <div><img src="../img/kendamil-organic-stage-1-2.jpg"></div>
-                <div><img src="../img/kendamil-organic-stage-1-3.jpg"></div>
+                <div><img src="../img/kendamil-organic-stage-1-800g-baby-formula-622915_500x9b3c.jpg" class="small_img"></div>
+                <div><img src="../img/kendamil-organic-stage-1-1.jpg" class="small_img"></div>
+                <div><img src="../img/kendamil-organic-stage-1-2.jpg" class="small_img"></div>
+                <div><img src="../img/kendamil-organic-stage-1-3.jpg" class="small_img"></div>
             </div>
         </section>
 
@@ -56,9 +58,10 @@
                 </h4>
                 <div>
                     <section class="section_detail_box_left">
-                        <h3>-</h3>
-                        <h3>1</h3>
-                        <h3>+</h3>
+                        <button id="minus_quantity"><h3>-</h3></button>
+                        <h3 id="number_quantity">1</h3>
+                        <button id="plus_quantity"><h3>+</h3></button>
+
                     </section>
                     <section class="section_detail_box_right, sale">
                         <h3 class="price_left">$39.99</h3>
@@ -198,5 +201,7 @@
         </div>
         </div>
     </footer>
+
+  <script type="text/javascript" src="../js/each_product_script.js"></script>
   </body>
 </html>
