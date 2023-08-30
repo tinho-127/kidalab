@@ -9,199 +9,212 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    
   </head>
-  <body>
-    <header class="header">
-        <div class="header_logo" >
-          <a href="index.html">  
-            <img src="../img/logo.png" >
-          </a>
-        </div>
-        <div class="header_options">
-            <ul>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="login_signup.html"><i class="fa-solid fa-circle-user"></i></li>
-                <li><a href="products_diaper.html">Diaper</a></li>
-                <li><a href="products_paper.html">Paper</a></li>
-                <li><a href="products_formula.html">Formula</a></li>
-            </ul>
-        </div>
-    </header>
 
-    <main>
-        <section class="section_img">
-            <div class="section_img_big" id="container">
-                <img src="../img/kendamil-organic-stage-1-800g-baby-formula-622915_500x9b3c.jpg" id="main_img">
+<body>
+  <header>
+    <div class="header_logo" >
+      <a href="index.html">  
+        <img src="../img/logo.png" >
+      </a>
+    </div>
+    <div class="header_options">
+        <ul>
+          <li>         
+            <div class="box">
+              <div class="cart-count">0</div>
             </div>
-            <div class="section_img_small">
-                <div><img src="../img/kendamil-organic-stage-1-800g-baby-formula-622915_500x9b3c.jpg" class="small_img"></div>
-                <div><img src="../img/kendamil-organic-stage-1-1.jpg" class="small_img"></div>
-                <div><img src="../img/kendamil-organic-stage-1-2.jpg" class="small_img"></div>
-                <div><img src="../img/kendamil-organic-stage-1-3.jpg" class="small_img"></div>
-            </div>
-        </section>
+            <i class="fa-solid fa-cart-shopping"  id="cart-icon"></i>
+          </li>
+          <li><a href="login_signup.html"><i class="fa-solid fa-circle-user"></i></li>
+          <li><a href="products_diaper.html">Diaper</a></li>
+          <li><a href="products_paper.html">Paper</a></li>
+          <li><a href="products_formula.html">Formula</a></li>
+        </ul>
+    </div>
+    <div class="nav">
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content"></div>  
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+      </div>
+      <button class="btn-buy">Place Order</button>
+      <i class="fa-solid fa-xmark" id="cart-close"></i>
+      </div>
+    </div>
+  </header>
 
-        <section class="section_detail">
-            <div class="section_detail_box">
-                <h1>Kendamil Organic Stage 1 (800g) Baby Formula</h1><br>
-                <section class="section_review">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <h4>     4.9 out of 5 Stars (95 Reviews)</h4>
-                </section>
-                <h4><i class="fa-solid fa-check"></i>   100% Organic Cow's Milk
-                <br><i class="fa-solid fa-check"></i>   Whole Milk Fats  
-                <br><i class="fa-solid fa-check"></i>   Plant Based DHA
-                </h4>
-                <div>
-                    <section class="section_detail_box_left">
-                        <button id="minus_quantity"><h3>-</h3></button>
-                        <h3 id="number_quantity">1</h3>
-                        <button id="plus_quantity"><h3>+</h3></button>
-
-                    </section>
-                    <section class="section_detail_box_right, sale">
-                        <h3 class="price_left">$39.99</h3>
-                        <h3 class="price_right">$14.99</h3>
-                        <h3 class="price_center">SOLD OUT</h3>
-                    </section>
-                </div>
-                <h5><br>Estimate Delievery in Checout</h5>
-                <h5>Express Shipping Available</h5>
-                <section class="button_cart">
-                    <h3>Add to Cart</h3>
-                </section>
-                <section class="section_badge">
-                    <img src="../img/badge-certified-europian-standardsa2e2.png">
-                    <img src="../img/badge-certified-organic8def.png">
-                    <img src="../img/badge-g-m-o-freea2e2.png">
-                    <img src="../img/badge-maltodextrin-freed4b4.png">
-                    <img src="../img/badge-no-sugara2e2.png">
-                    <img src="../img/badge-soy-freea2e2.png">
-                    <img src="../img/badge-starch-freea2e2.png">
-                    <img src="../img/badge-hydrolysed-rice8def.png">
-                    <img src="../img/badge-plant-based-dhaa2e2.png">
-                    <img src="../img/badge-vegetarian-fiendlya2e2.png">
-                </section>
-            </div>
-        </section>
-
-        <section class="section_info">
-            <h1>Kendamil Organic Milk Formula</h1>
-            <h3>Premier Organic Milk Formula for Healthy Development</h3>
-            <h4>Kendamil is British nutrition that is closer to nature and kinder by miles.</h4>
-            <span>Founded in 1962, Kendamil sources only the freshest dairy from world-class family farms in the famous Lake District of the United Kingdom 🇬🇧.
-                <br><br>Kendamil supports local producers and, in return, is able to provide the absolute best ingredients that are traceable at every step of manufacturing, from farm to formula.
-                <br><br>A principle highlight is the fact that solely producing the Kendamil brand allows this baby formula company to focus on doing what they do best, making the very finest in infant nutrition.
-                <br><br><b>Organic Certification</b> guarantees that ingredients, including whole cow’s milk, are sourced entirely from organic farms, which make up only 1% of the world’s farms in the case of dairy. All of Kendamil Organic stages are certified by two of the highest standard bodies in the world, the EU Organic Certification and the UK Soil Association.
-                <br><br><b>Full Fat Organic Milk</b> is the star of this organic formulation.
-                <br>Ken Glomil believes that adding whole milk to provide a natural mammal fat source is the best formulation for your baby's needs.
-                <br>This ingredient reduces the amount of vegetable oils needed to reach the correct fat content.
-                <br><br>Additionally, using whole milk is linked to increased cognitive development.
-                <br><br><b>Kendamil Organic Formula Stages</b> is proud to offer sustainable baby milk: Vegetarian, Fish oil-free, Palm oil-free & Plant-based DHA at every variation.
-                
-                <br><i class="fa-solid fa-check"></i> Stage 1 Starting at Birth
-                <br><i class="fa-solid fa-check"></i> Stage 2 Starting at 6 Months
-                <br><i class="fa-solid fa-check"></i> Stage 3 Starting at 12 Months
-                <br><br><b>Why we love Kendamil Organic Formula!</b>
-                
-                <br><i class="fa-solid fa-check"></i> EU Organic and UK Soil Association
-                <br><i class="fa-solid fa-check"></i> Full Fat Milk
-                <br><i class="fa-solid fa-check"></i> Vegetarian Recipe
-                <br><i class="fa-solid fa-check"></i> FOS and GOS Prebiotics
-            </span>
-        </section>
-
-        <section class="section_info">
-            <h1>About Kendamil Organic Stage 1 Baby Formula</h1>
-            <h3>Kendamil is British nutrition that is closer to nature and kinder by miles. </h3>
-            <span>Kendamil infant formula is fully organic balanced nutrition that can be used alone or as a delicious companion to breastfeeding from birth
-                <br><br>This organic baby formula’s main ingredient is full-fat cow’s milk, which nourishes and supports infants with a naturally creamy taste and reduced levels of vegetable oils
-                <br><br>It also means Kendamil includes naturally occurring MFGM (Milk Fat Globule Membrane).
-                <br><br>Kendamil is a Certified Vegetarian with Omega 3 from marine algae and avoids animal rennet in all production processes.
-                <br><br>This 100% British baby formula does not contain palm oil, fish oil, or other cheap additives.
-                <br>Wholesome and nutritionally complete stage 1 infant formula contains critical ALA, LA, and ARA that are thought to help with brain, eye, and soft tissue development and whey to casein ratio of 60:40 to mimic breastmilk.
-                <br><br>Clean ingredients without harmful pesticides or synthetic ingredients help to make this pure nutrition that you can trust.
-                <br><br><b>Kendamil Organic Stage 1 is 800g of powdered baby formula</b>    
-                <br><i class="fa-solid fa-check"></i> Starting from Birth
-                <br><i class="fa-solid fa-check"></i> 100% Organic Cow's Milk
-                <br><i class="fa-solid fa-check"></i> Whole Milk Fats                
-                <br><i class="fa-solid fa-check"></i>  Plant Based DHA
-                <br><i class="fa-solid fa-check"></i>   Free of Starch and Maltodextrin
-                <br><i class="fa-solid fa-check"></i>   No Palm Oil
-            </span>
-        </section>
-
-        <section class="section_info">
-            <h1>Ingredients</h1>
-            <span>Organic Whole Milk, Organic Demineralized Milk Whey Protein Powder, Organic Skim Milk, Organic Vegetable Oils (Sunflower, Coconut, Rapeseed), Organic Galacto-Oligosaccharides (From Milk), Calcium Citrate, Sodium Citrate, Potassium Chloride, Calcium Lactate, Magnesium Chloride, Docosahexaenoic Acid, Arachidonic Acid, Vitamin C, Potassium Hydroxide, Choline Bitartrate, Inositol, Taurine, Nucleotides (Cytidine-5’-Monophosphate, Disodium Uridine-5’-Monophosphate, Adenosine-5’-Monophosphate, Disodium Inosine-5’Monophosphate, Disodium Guanosine-5’ Monophosphate), Iron Pyrophosphate, Zinc Sulfate, Vitamin E, Niacin, Pantothenic Acid, Copper Sulfate, Thiamin, Riboflavin, Vitamin A, Vitamin B6, Manganese Sulfate, Folic Acid, Potassium Iodide, Sodium Selenite, Vitamin K, Vitamin D3, Biotin, Vitamin B12.
-            </span>
-        </section>
-
-    </main>
-
-
-    <footer>
-        <div class="header_logo" id="footer_1">
-          <a href="index.html">  
-            <img src="../img/logo.png">
-          </a>
-          <form action="action_page.php" class="form_footer" >
-          
-            <div class="container_footer_email_1">
-              <input type="text" placeholder="Email address" name="mail" required>
-            </div>
-          
-            <div class="container_footer_email_2">
-              <input type="submit" value="JOIN OUR LAB">
-            </div>
-          </form>
-  
-          <span>Receive early discounts for current products</span>
-  
-        </div>
-  
-        <div class="footer_2">
-          <div>
-            <h2>HELP & ADVICES</h2>
-            <ul>
-              <li><a href="shipping_refund_policy.html">Shipping Policy</a></li>
-              <li><a href="shipping_refund_policy.html">Refund Policy</a></li>
-              <li><a href="privacy_policy.html">Privacy Policy</a></li>
-            </ul>
+  <div class="container">
+    <div class="shop-content">
+      <div class="product-box">   
+        <div class="pic">   
+          <div class="section_img_big" id="container">
+            <img src="../img/kendamil-organic-stage-1-800g-baby-formula-622915_500x9b3c.jpg" class="product-img" id="main_img">
           </div>
-          <div>
-            <h2>ACCOUNT</h2>
-            <ul>
-              <li><a href="login_signup.html">My Account</a></li>
-              <li><a href="login_signup.html">My Wishlist</a></li>
-              <li><a href="login_signup.html">My Order</a></li>
-            </ul>        
-          </div>
-          <div>
-            <h2>ABOUT US</h2>
-            <ul>
-              <li><a href="ourstory.html">Our Story</a></li>
-              <li><a href="find_contact_us.html">Where to Find Us</a></li>
-              <li><a href="find_contact_us.html">Contact Us</a></li>
-            </ul>        
-          </div>
-          <div class="footer_icon_contact">
-            <ul>
-              <li><i class="fa-brands fa-cc-visa"></i></li>
-              <li><i class="fa-brands fa-cc-mastercard"></i></li>
-              <li><i class="fa-brands fa-cc-discover"></i></li>
-              <li><i class="fa-brands fa-cc-amex"></i></li>
-              <li><i class="fa-brands fa-cc-paypal"></i></li>
-            </ul>        
+          <div class="section_img_small">
+            <div><img src="../img/kendamil-organic-stage-1-800g-baby-formula-622915_500x9b3c.jpg" class="small_img"></div>
+            <div><img src="../img/kendamil-organic-stage-1-1.jpg" class="small_img"></div>
+            <div><img src="../img/kendamil-organic-stage-1-2.jpg" class="small_img"></div>
+            <div><img src="../img/kendamil-organic-stage-1-3.jpg" class="small_img"></div>
           </div>
         </div>
-        </div>
-    </footer>
+      </div>
+      <div class="section_detail sale">
+        <div>
+          <h1 class="product-title">Kendamil Organic Stage 1 (800g) Baby Formula</h1><br>
 
+          <h3 class="price_left">$39.99</h3>
+          <h3 class="price_right product-price">$14.99</h3>
+          <h3 class="price_center">SOLD OUT</h3>
+
+          <br><i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <h4>4.9 out of 5 Stars (95 Reviews)</h4><br>
+          <h5><i class="fa-solid fa-check"></i>   100% Organic Cow's Milk</h5>
+          <h5><i class="fa-solid fa-check"></i>   Whole Milk Fats</h5>
+          <h5><i class="fa-solid fa-check"></i>   Plant Based DHA</h5>
+
+          <button class="add-cart button_cart"><h5>ADD TO CART</h5></button>
+
+          <h5><br><i class="fa-solid fa-check"></i> Estimate Delievery in Checkout</h5>
+          <h5><i class="fa-solid fa-check"></i> Express Shipping Available</h5>
+
+        </div>
+        <section class="section_badge">
+          <img src="../img/badge-certified-europian-standardsa2e2.png">
+          <img src="../img/badge-certified-organic8def.png">
+          <img src="../img/badge-g-m-o-freea2e2.png">
+          <img src="../img/badge-maltodextrin-freed4b4.png">
+          <img src="../img/badge-no-sugara2e2.png">
+          <img src="../img/badge-soy-freea2e2.png">
+          <img src="../img/badge-starch-freea2e2.png">
+          <img src="../img/badge-hydrolysed-rice8def.png">
+          <img src="../img/badge-plant-based-dhaa2e2.png">
+          <img src="../img/badge-vegetarian-fiendlya2e2.png">
+        </section>
+        
+
+      </div>
+
+      <section class="section_info">
+        <h1>Kendamil Organic Milk Formula</h1>
+        <h3>Premier Organic Milk Formula for Healthy Development</h3>
+        <h4>Kendamil is British nutrition that is closer to nature and kinder by miles.</h4>
+        <span>Founded in 1962, Kendamil sources only the freshest dairy from world-class family farms in the famous Lake District of the United Kingdom 🇬🇧.
+            <br><br>Kendamil supports local producers and, in return, is able to provide the absolute best ingredients that are traceable at every step of manufacturing, from farm to formula.
+            <br><br>A principle highlight is the fact that solely producing the Kendamil brand allows this baby formula company to focus on doing what they do best, making the very finest in infant nutrition.
+            <br><br><b>Organic Certification</b> guarantees that ingredients, including whole cow’s milk, are sourced entirely from organic farms, which make up only 1% of the world’s farms in the case of dairy. All of Kendamil Organic stages are certified by two of the highest standard bodies in the world, the EU Organic Certification and the UK Soil Association.
+            <br><br><b>Full Fat Organic Milk</b> is the star of this organic formulation.
+            <br>Ken Glomil believes that adding whole milk to provide a natural mammal fat source is the best formulation for your baby's needs.
+            <br>This ingredient reduces the amount of vegetable oils needed to reach the correct fat content.
+            <br><br>Additionally, using whole milk is linked to increased cognitive development.
+            <br><br><b>Kendamil Organic Formula Stages</b> is proud to offer sustainable baby milk: Vegetarian, Fish oil-free, Palm oil-free & Plant-based DHA at every variation.
+            
+            <br><i class="fa-solid fa-check"></i> Stage 1 Starting at Birth
+            <br><i class="fa-solid fa-check"></i> Stage 2 Starting at 6 Months
+            <br><i class="fa-solid fa-check"></i> Stage 3 Starting at 12 Months
+            <br><br><b>Why we love Kendamil Organic Formula!</b>
+            
+            <br><i class="fa-solid fa-check"></i> EU Organic and UK Soil Association
+            <br><i class="fa-solid fa-check"></i> Full Fat Milk
+            <br><i class="fa-solid fa-check"></i> Vegetarian Recipe
+            <br><i class="fa-solid fa-check"></i> FOS and GOS Prebiotics
+        </span>
+      </section>
+
+      <section class="section_info">
+          <h1>About Kendamil Organic Stage 1 Baby Formula</h1>
+          <h3>Kendamil is British nutrition that is closer to nature and kinder by miles. </h3>
+          <span>Kendamil infant formula is fully organic balanced nutrition that can be used alone or as a delicious companion to breastfeeding from birth
+              <br><br>This organic baby formula’s main ingredient is full-fat cow’s milk, which nourishes and supports infants with a naturally creamy taste and reduced levels of vegetable oils
+              <br><br>It also means Kendamil includes naturally occurring MFGM (Milk Fat Globule Membrane).
+              <br><br>Kendamil is a Certified Vegetarian with Omega 3 from marine algae and avoids animal rennet in all production processes.
+              <br><br>This 100% British baby formula does not contain palm oil, fish oil, or other cheap additives.
+              <br>Wholesome and nutritionally complete stage 1 infant formula contains critical ALA, LA, and ARA that are thought to help with brain, eye, and soft tissue development and whey to casein ratio of 60:40 to mimic breastmilk.
+              <br><br>Clean ingredients without harmful pesticides or synthetic ingredients help to make this pure nutrition that you can trust.
+              <br><br><b>Kendamil Organic Stage 1 is 800g of powdered baby formula</b>    
+              <br><i class="fa-solid fa-check"></i> Starting from Birth
+              <br><i class="fa-solid fa-check"></i> 100% Organic Cow's Milk
+              <br><i class="fa-solid fa-check"></i> Whole Milk Fats                
+              <br><i class="fa-solid fa-check"></i>  Plant Based DHA
+              <br><i class="fa-solid fa-check"></i>   Free of Starch and Maltodextrin
+              <br><i class="fa-solid fa-check"></i>   No Palm Oil
+          </span>
+      </section>
+
+      <section class="section_info">
+          <h1>Ingredients</h1>
+          <span>Organic Whole Milk, Organic Demineralized Milk Whey Protein Powder, Organic Skim Milk, Organic Vegetable Oils (Sunflower, Coconut, Rapeseed), Organic Galacto-Oligosaccharides (From Milk), Calcium Citrate, Sodium Citrate, Potassium Chloride, Calcium Lactate, Magnesium Chloride, Docosahexaenoic Acid, Arachidonic Acid, Vitamin C, Potassium Hydroxide, Choline Bitartrate, Inositol, Taurine, Nucleotides (Cytidine-5’-Monophosphate, Disodium Uridine-5’-Monophosphate, Adenosine-5’-Monophosphate, Disodium Inosine-5’Monophosphate, Disodium Guanosine-5’ Monophosphate), Iron Pyrophosphate, Zinc Sulfate, Vitamin E, Niacin, Pantothenic Acid, Copper Sulfate, Thiamin, Riboflavin, Vitamin A, Vitamin B6, Manganese Sulfate, Folic Acid, Potassium Iodide, Sodium Selenite, Vitamin K, Vitamin D3, Biotin, Vitamin B12.
+          </span>
+      </section> 
+    </div>
+  </div>
+  <footer>
+    <div class="header_logo" id="footer_1">
+      <a href="index.html">  
+        <img src="../img/logo.png">
+      </a>
+      <form action="action_page.php" class="form_footer" >
+      
+        <div class="container_footer_email_1">
+          <input type="text" placeholder="Email address" name="mail" required>
+        </div>
+      
+        <div class="container_footer_email_2">
+          <input type="submit" value="JOIN OUR LAB">
+        </div>
+      </form>
+
+      <span>Receive early discounts for current products</span>
+
+    </div>
+
+    <div class="footer_2">
+      <div>
+        <h2>HELP & ADVICES</h2>
+        <ul>
+          <li><a href="shipping_refund_policy.html">Shipping Policy</a></li>
+          <li><a href="shipping_refund_policy.html">Refund Policy</a></li>
+          <li><a href="privacy_policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>ACCOUNT</h2>
+        <ul>
+          <li><a href="login_signup.html">My Account</a></li>
+          <li><a href="login_signup.html">My Wishlist</a></li>
+          <li><a href="login_signup.html">My Order</a></li>
+        </ul>        
+      </div>
+      <div>
+        <h2>ABOUT US</h2>
+        <ul>
+          <li><a href="ourstory.html">Our Story</a></li>
+          <li><a href="find_contact_us.html">Where to Find Us</a></li>
+          <li><a href="find_contact_us.html">Contact Us</a></li>
+        </ul>        
+      </div>
+      <div class="footer_icon_contact">
+        <ul>
+          <li><i class="fa-brands fa-cc-visa"></i></li>
+          <li><i class="fa-brands fa-cc-mastercard"></i></li>
+          <li><i class="fa-brands fa-cc-discover"></i></li>
+          <li><i class="fa-brands fa-cc-amex"></i></li>
+          <li><i class="fa-brands fa-cc-paypal"></i></li>
+        </ul>        
+      </div>
+    </div>
+    </div>
+</footer>
+  <script src="../js/cart.js"></script>
   <script type="text/javascript" src="../js/each_product_script.js"></script>
-  </body>
+
+</body>
 </html>

@@ -27,15 +27,7 @@ document.getElementById('container').addEventListener("mouseout", function(e) {
     tgt.classList.remove('zoomed')
 })
 
-/*ADD-MINUS id="minus_quantity"*/
-var minus_quantity = document.getElementById("minus_quantity");
-var plus_quantity = document.getElementById("plus_quantity");
-const p = document.getElementById("number_quantity");
-
-plus_quantity.onclick = function() {
-    p.textContent = +p.textContent + 1;
-}
-
-minus_quantity.onclick = function() {
-    p.textContent = +p.textContent - 1;
-}
+document.getElementById('container').addEventListener("click", function(e) {
+    const tgt = e.target;
+    tgt.classList.toggle('zoomed')
+})

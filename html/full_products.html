@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
   </head>
   <body>
-    <header class="header">
+    <header>
         <div class="header_logo" >
           <a href="index.html">  
             <img src="../img/logo.png" >
@@ -18,14 +18,31 @@
         </div>
         <div class="header_options">
             <ul>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="login_signup.html"><i class="fa-solid fa-circle-user"></i></li>
-                <li><a href="products_diaper.html">Diaper</a></li>
-                <li><a href="products_paper.html">Paper</a></li>
-                <li><a href="products_formula.html">Formula</a></li>
+              <li>         
+                <div class="box">
+                  <div class="cart-count">0</div>
+                </div>
+                <i class="fa-solid fa-cart-shopping"  id="cart-icon"></i>
+              </li>
+              <li><a href="login_signup.html"><i class="fa-solid fa-circle-user"></i></li>
+              <li><a href="products_diaper.html">Diaper</a></li>
+              <li><a href="products_paper.html">Paper</a></li>
+              <li><a href="products_formula.html">Formula</a></li>
             </ul>
         </div>
-    </header>
+        <div class="nav">
+          <div class="cart">
+            <div class="cart-title">Cart Items</div>
+            <div class="cart-content"></div>  
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <button class="btn-buy">Place Order</button>
+          <i class="fa-solid fa-xmark" id="cart-close"></i>
+          </div>
+        </div>
+      </header>
 
     <main>
         <section class="price_sale">
