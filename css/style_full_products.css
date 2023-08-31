@@ -70,8 +70,8 @@ header{
 }
 
 .cart-count{
-    padding: 0 .3em 0 .3em;
- }
+   padding: 0 .3em 0 .3em;
+}
 
 #cart-icon{
     font-size: 1.5rem;
@@ -459,7 +459,9 @@ footer div div ul{
   
 #cart-close{
     position: absolute;
-    top: 1rem;     
+    top: 1rem; 
+}
+
 .cart{
     position: fixed;
     top: 0;
@@ -574,7 +576,103 @@ footer div div ul{
     cursor: pointer;
 } 
 
-    right: 0.8rem;
-    font-size: 2rem;
-    cursor: pointer;
-} 
+@media screen and (max-width: 428px) {
+    body { overflow: auto;}
+
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .header_logo{
+        width: 100%;
+    }
+
+    .header_logo img{
+        float: left;
+    }
+
+    .header_options{
+        width: 100%;
+    }
+    
+    .header_options ul{
+        justify-content: space-evenly;
+    }
+
+    .header_options ul li {
+        padding: 10px 5px 10px 5px;
+        font-size: 1em;
+    }
+
+    .header_options ul li,
+    .header_options ul li i{
+        line-height: 10px;
+    }
+
+    main{
+        justify-content: space-around;
+    }
+
+    main section {
+        width: 40%;
+        margin: 10px;
+    }
+
+    section div h6, section div span {
+        width: 100%;
+        font-size: 1em;
+        padding: .1em;
+        text-align: center;
+        margin-bottom: .5em;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        padding-bottom: 1em;
+        margin-bottom: 0;
+    }
+
+    #footer_1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .footer_2{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+
+    }
+    .footer_2 div{
+        width: 50%;
+        padding: .7em 0 .5em 0;
+    }
+
+    .footer_2 h2{
+        font-size: 1.3em;
+    }
+
+    .footer_icon_contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_icon_contact ul li {
+        padding-left: .3em;
+        padding-right: .3em;
+    }
+
+    .form_footer{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

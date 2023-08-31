@@ -100,6 +100,7 @@ footer div div ul{
     justify-content: center;
 }
 
+
 .footer_2 div{
     width: 50%;
 }
@@ -280,4 +281,92 @@ footer div div ul{
     margin: 1em 0 .3em 0;
     font-size: 1.1em;
     font-weight: 500;
+}
+
+@media screen and (max-width: 428px) {
+    body { overflow: auto;}
+    .header{
+        display: flex; 
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header_options ul li {
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 0px 5px 0px 5px;
+        line-height: var(--header_height);
+        font-size: 1em;
+    }
+
+    .header_options ul li,
+    .header_options ul li i{
+        line-height: 30px;
+    }
+
+    .mainbody{
+        padding: 80px 0 70px 0;
+        background-color: var(--header_option_char);
+    }
+
+    .mainbody div {
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        margin-bottom: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .mainbody div h5 {
+        font-size: 1.1em;
+        margin: .5em auto .5em auto;
+        padding-top: 12.5em;
+    }
+
+    .mainbody div .mainbody_span{
+        padding-top: 0em;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        padding-bottom: 1em;
+        margin-bottom: 0;
+    }
+
+    #footer_1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .footer_2{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+
+    }
+    .footer_2 div{
+        width: 50%;
+        padding: .7em 0 .5em 0;
+    }
+
+    .footer_2 h2{
+        font-size: 1.3em;
+    }
+
+    .footer_icon_contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_icon_contact ul li {
+        padding-left: .3em;
+        padding-right: .3em;
+    }
 }
