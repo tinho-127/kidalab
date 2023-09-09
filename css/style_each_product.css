@@ -440,6 +440,14 @@ main{
     color: var(--icon_color)
 }
 
+.huggies i{
+    color: orange
+}
+
+.milliemoon i{
+    color: navy
+}
+
 .section_detail div{
     width: 100%;
 }
