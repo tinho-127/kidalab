@@ -498,7 +498,7 @@ main{
 }
 
 .sale .price_left{
-    text-decoration: line-through var(--header_background);
+    display: none;
 }
 
 .sale .price_right{

@@ -185,11 +185,13 @@ section div span{
 }
 
 .price_sale .price_left{
-    text-decoration: line-through var(--header_background);
+    display: none;
 }
 
 .price_sale .price_right{
     color: var(--header_background);
+    font-weight: 900;
+    text-align: center;
 }
 
 .price_sale .price_bottom{
