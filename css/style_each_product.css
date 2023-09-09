@@ -760,5 +760,12 @@ main{
         width: 75%;
     }
 
+    .price_sale .price_left {
+        text-decoration: line-through var(--header_background);
+    }
+
+    .section_detail h5 {
+        color: black
+    }
     
 }

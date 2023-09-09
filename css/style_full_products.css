@@ -351,12 +351,13 @@ footer div div ul{
 
 /**/
      
+      
 .cart{
     position: fixed;
     top: 0;
     right: -100%;
-    width: 0px;
     height: 100vh;
+    width: 0px;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 20px;
@@ -676,5 +677,13 @@ footer div div ul{
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .cart{
+        width: 0;
+    }
+
+    .price_sale .price_left {
+        text-decoration: line-through var(--header_background);
     }
 }
