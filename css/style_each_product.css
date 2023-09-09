@@ -148,8 +148,8 @@ h2.title{
     position: fixed;
     top: 0;
     right: -100%;
-    width: 400px;
     height: 100vh;
+    width: 0px;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 20px;
@@ -161,6 +161,7 @@ h2.title{
 .cart-active{
     right:0;
     transition: 0.5s;
+    width: 400px;
 }
   
 .cart-title{
@@ -758,4 +759,6 @@ main{
         transition: 0.5s;
         width: 75%;
     }
+
+    
 }

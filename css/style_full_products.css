@@ -355,7 +355,7 @@ footer div div ul{
     position: fixed;
     top: 0;
     right: -100%;
-    width: 400px;
+    width: 0px;
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
@@ -368,6 +368,7 @@ footer div div ul{
 .cart-active{
     right:0;
     transition: 0.5s;
+    width: 400px;
 }
   
 .cart-title{
@@ -578,6 +579,7 @@ footer div div ul{
 
 @media screen and (max-width: 428px) {
     body { overflow: auto;}
+    /* Hide scrollbar for Chrome, Safari and Opera */
 
     header{
         display: flex;
